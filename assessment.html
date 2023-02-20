@@ -7,15 +7,131 @@
 </head>
 <body>
 	<h2>TEXT</h2>
-	<p></p>
-	<p></p>
-	<p></p>
+	<p><strong>This</strong> is paragraph 1</p>
+	<p><blockquote><em><strong>This</strong> is paragraph 2</em></blockquote></p>
+	<p><strong>This</strong> is paragraph 3</p>
 
 	<!--table stuff -->
+<table>
+  <thead>Team Scores By Quarter</thead>
+ 	 <tr>
+    	<th rowspan="2">Team Name</th>
+    	<th colspan="2">First Half</th>
+    	<th colspan="2">Second Half</th>
+  	 </tr>
+  	 <tr>
+  		<td></td>
+  		<td>q1</td>
+  		<td>q2</td>
+  		<td>q3</td>
+  		<td>q4</td>
+  	 </tr>
+  	 <tr>
+    	<td>Denver</td>
+    	<td>0</td>
+    	<td>7</td>
+    	<td>0</td>
+    	<td>9</td>
+  	 </tr>
+  	 <tr>
+    	<td>Chicago</td>
+    	<td>2</td>
+    	<td>7</td>
+    	<td>0</td>
+    	<td>0</td>
+  	 </tr>
+</table>
 
 	<!-- list/nested list stuff -->
+	<h2>List</h2>
+<ul>
+	<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Denver_Broncos_logo.svg/200px-Denver_Broncos_logo.svg.png" alt = "Denver Broncos Logo" width="120" height="80">
+	<li><a href = "https://en.wikipedia.org/wiki/Denver_Broncos"
+		>Denver Broncos</a>
+		<ul>
+			<li>Coach: Gary Kubiak</li>
+			<li>QB
+				<ol>
+					<li>Brock Osweiler</li>
+					<li>Trevor Sieman</li>
+					<li>Peyton Manning (Injured)</li>
+				</ol>
+			</li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/New_England_Patriots_logo.svg/200px-New_England_Patriots_logo.svg.png" alt = "New England Patriots Logo" width = "120" height = "80">
+	<li><a href = "https://en.wikipedia.org/wiki/New_England_Patriots">New England Patriots<a/>
+		<ul>
+			<li>Coach: Gary Kubiak</li>
+			<li>QB
+				<ol>
+					<li>Tom Brady</li>
+				</ol>
+			</li>
+		</ul>
+	</li>
+</ul>
+
 
 	<!-- form stuff-->
+
+	<form>
+
+		<div id= "name">
+			<label for="fname">First name:</label><br>
+  			<input type="text" id="fname" name="fname"><br>
+  			<label for="lname">Last name:</label><br>
+  			<input type="text" id="lname" name="lname">
+  			<br>
+		</div>
+
+		<div id = "Drop down Menu">	
+			<h4>Please select your favorite sport</h4>
+			<select name = "sport">
+				<option value = "Select Sport">Select Sport</option>
+				<option value = "Soccer">Soccer</option>
+				<option value = "Football">Football</option>
+				<option value = "Baseball">Baseball</option>
+				<option value = "Badminton">Badminton</option>
+			</select>
+			<br>		
+		</div>
+
+		<div id= "checkbox">
+			<h5>I Have: </h5>			
+				<input type = "checkbox" id = "Played" 
+				name = "Played" value = "Played">
+				<label for="Played">Played</label>
+				<input type = "checkbox" id = "Coached" 
+				name = "Coached" value = "Coached">
+				<label for="Coached">Coached</label>
+				<input type = "checkbox" id = "Attended" 
+				name = "Attended" value = "Attended">
+				<label for="Attended">Attended</label>
+				<input type = "checkbox" id = "Beton" 
+				name = "Beton" value = "Beton">
+				<label for="Beton">Bet On</label>
+			<h5>This Sport</h5>
+		<br>
+
+		<div id= "radio">
+			<h4>Which do you prefer most?</h4>
+				<input type= "radio" id = "Amateur" name = "Amateur" value = "Amateur">
+				<label for ="Amateur">Amateur</label>
+				<input type= "radio" id = "College" name = "College" value = "College">
+				<label for ="College">College</label>
+				<input type= "radio" id = "Professional"
+				 name = "Professional" value = "Professional">
+				<label for ="Professional">Professional</label>
+			<br>	
+		</div>
+		<div id = "Submit">
+			<input type = "submit" value = "Submit">
+		</div>
+
+	</form>
 
 	
 
